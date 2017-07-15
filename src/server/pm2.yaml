@@ -1,0 +1,8 @@
+apps:
+- name: ufaas
+  script: ./dist/index.js
+  node_args: --harmony
+  env:
+    NODE_ENV: prod
+    NODE_CONFIG_STRICT_MODE: 0
+  merge_logs: true

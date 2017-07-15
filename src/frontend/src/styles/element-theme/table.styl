@@ -1,0 +1,41 @@
+shadow-table = 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+gradient = linear-gradient(to right, rgb(19, 78, 94), rgb(113, 178, 128))
+
+.el-table
+  border none
+  box-shadow shadow-table
+  &:after
+  &:before
+    background-color transparent
+
+  tr
+  th
+  td
+  .cell
+  &__empty-block
+    background-color #303339
+    border none !important
+    color lighten(#4a4d52, 35%)
+
+  thead
+  &__header-wrapper
+    box-shadow shadow-header
+    position: relative
+    z-index 1
+    tr
+      th
+        padding 15px 0
+
+  &__body-wrapper
+    td
+      padding 15px 0
+    .cell
+      color #fff
+
+.el-table--enable-row-hover .el-table__body tr:hover
+  transition background .3s ease
+  background gradient
+  & > td
+  .cell
+    background transparent
+

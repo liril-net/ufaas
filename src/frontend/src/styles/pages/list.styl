@@ -1,0 +1,29 @@
+#page-list
+  height 100%
+  overflow scroll
+  .project-list
+    padding 20px
+
+  .project-add
+    position absolute
+    right 40px
+    bottom 40px
+    background linear-gradient(to right, #5fc6cb, #1badb4)
+    width 60px
+    height 60px
+    border-radius 50%
+    line-height 60px
+    text-align center
+    cursor pointer
+    &:hover
+      box-shadow shadow-diffuse
+  .tags
+    margin-bottom 20px
+    .el-tag
+      cursor default
+      user-select none
+      margin 0 5px
+      &:first-child
+        margin-left 0
+  .el-button
+    width 100%

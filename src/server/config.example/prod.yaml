@@ -1,0 +1,5 @@
+app:
+  port: 9402
+  env: prod
+mongodb:
+  url: mongodb://localhost/foo

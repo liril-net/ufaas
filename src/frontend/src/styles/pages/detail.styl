@@ -1,0 +1,60 @@
+#page-detail
+  height 100%
+  overflow scroll
+  .el-dropdown
+    margin 0 10px
+  span.upload
+    color #0c84ce
+  span.rollback
+    color #03e16b
+  span.transfer
+    color #ff7e00
+  .tags
+    margin-bottom 20px
+    .el-tag
+      cursor default
+      user-select none
+      margin 0 5px
+      &:first-child
+        margin-left 0
+
+.el-dropdown-menu
+  width 149px
+.project-detail
+  &__header
+    padding 20px
+  &__title
+    display flex
+    align-items center
+    span
+      margin-right 15px
+      cursor pointer
+      display block
+      width 30px
+      height 30px
+      background linear-gradient(to right, rgb(252, 0, 255), rgb(0, 219, 222))
+  &__date
+    max-width 400px
+    color #7a8593
+    font-size 13px
+    margin-left 45px
+    i
+      margin-right 10px
+  &__description
+    margin-left 45px
+
+  &__content
+    padding 0 20px
+  &__toolbar
+    color #ddd
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 20px
+
+.custom-upload
+  .el-upload-dragger
+    background-color transparent
+  &.uploaded
+    .el-upload
+      display none

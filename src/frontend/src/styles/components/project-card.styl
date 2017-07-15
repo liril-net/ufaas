@@ -1,0 +1,73 @@
+gradient = linear-gradient(to right, rgb(253, 116, 108), rgb(255, 144, 104))
+
+.project-card
+  width 100%
+  background-color color-grey
+  padding 20px
+  box-shadow shadow-card
+  margin 10px 0
+  border-radius 8px
+  position relative
+  overflow hidden
+  cursor pointer
+  cursor pointer
+
+  &__title
+    margin-top 0
+    position relative
+    z-index 1
+    height 100px
+    display block
+    white-space nowrap
+    text-overflow ellipsis
+    overflow hidden
+
+  &__header
+    & > div
+      will-change transform, border-radius, padding-bottom
+      position absolute
+      top -60%
+      left -10%
+      transform rotate(8deg)
+      width 150%
+      padding-bottom 100%
+      background gradient
+      transition .2s cubic-bezier(0.4, 0, 0.2, 1)
+      contain strict
+
+  &__content
+    position relative
+    overflow scroll
+    z-index 1
+    height 180px
+    margin-bottom 30px
+
+  &__date
+    float right
+    font-size 12px
+    opacity .7
+    &:before
+      content ''
+      display inline-block
+      transform translateX(-5px)
+      width 8px
+      height 8px
+      background #7a8593
+      border-radius 50%
+
+  &:hover
+    .project-card__header
+      & > div
+        border-radius 60% 36%
+        padding-bottom 125%
+      .one
+        transform rotate(-5deg) translate3d(-20%, 0, 0)
+      .two
+        border-radius 41% 64% 91% 109%
+        transform rotate(-15deg) translate3d(-13%, 4%, 0)
+        width 125%
+        opacity .3
+      .three
+        transition-duration .26s
+        opacity .6
+        transform rotate(2deg)

@@ -1,0 +1,16 @@
+app:
+  port: 9502
+  env: dev
+  version: v1
+session:
+  keys: sessionkey
+mongodb:
+  url: mongodb://localhost/foo-alpha
+mail:
+  url: url
+  key: key
+  token: token
+logger:
+  directory: logs
+jwt:
+  secret: secret
